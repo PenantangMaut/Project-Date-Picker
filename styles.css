@@ -1,0 +1,69 @@
+*,
+::before,
+::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+main {
+  display: grid;
+  place-items: center;
+  margin-top: 2em;
+}
+
+header {
+  .header__container {
+    border: 2px solid black;
+    border-radius: 5px;
+    display: inline;
+    padding-inline: 0.5em;
+    padding-block: 0.25em;
+  }
+
+  button {
+    background-color: transparent;
+    border: none;
+  }
+
+  input {
+    text-align: center;
+    border: none;
+  }
+}
+
+.calender__container {
+  display: grid;
+  margin-top: 0.5em;
+  place-items: center;
+  border: 2px solid black;
+  border-radius: 5px;
+
+  .calender__header {
+    display: flex;
+    gap: 1em;
+    padding-block: 0.5em;
+  }
+
+  button {
+    background-color: transparent;
+    border: none;
+  }
+
+  table,
+  tr,
+  td {
+    border: 1px solid black;
+    border-spacing: 0;
+    text-align: center;
+  }
+
+  thead td {
+    border: none;
+  }
+
+  td {
+    padding-block: 4px;
+    padding-inline: 5.5px;
+  }
+}
